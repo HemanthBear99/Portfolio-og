@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./sections/Navbar";
-import Hero from "./sections/Hero";
-import ServiceSummary from "./sections/ServiceSummary";
-import Services from "./sections/Services";
-import ReactLenis from "lenis/react";
-import About from "./sections/About";
-import Works from "./sections/Works";
-import ContactSummary from "./sections/ContactSummary";
-import Contact from "./sections/Contact";
-import { useProgress } from "@react-three/drei";
+import { useProgress } from '@react-three/drei';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import ReactLenis from 'lenis/react';
+import React, { useEffect, useState } from 'react';
+import About from './sections/About';
+import Contact from './sections/Contact';
+import ContactSummary from './sections/ContactSummary';
+import Hero from './sections/Hero';
+import Navbar from './sections/Navbar';
+import ServiceSummary from './sections/ServiceSummary';
+import Services from './sections/Services';
+import Works from './sections/Works';
 
 const App = () => {
   const { progress } = useProgress();
@@ -37,7 +38,7 @@ const App = () => {
       )}
       <div
         className={`${
-          isReady ? "opacity-100" : "opacity-0"
+          isReady ? 'opacity-100' : 'opacity-0'
         } transition-opacity duration-1000`}
       >
         <Navbar />
