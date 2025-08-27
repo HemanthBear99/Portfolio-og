@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [tailwindcss(), react()],
   build: {
     rollupOptions: {
-      external: ['@vercel/speed-insights/next'],
+      external: ['@vercel/speed-insights/next', '@vercel/speed-insights'],
     },
   },
 });
