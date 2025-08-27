@@ -1,5 +1,4 @@
 import { useProgress } from '@react-three/drei';
-import { Analytics } from '@vercel/analytics/react';
 import ReactLenis from 'lenis/react';
 import React, { useEffect, useState } from 'react';
 import About from './sections/About';
@@ -44,7 +43,6 @@ const App = () => {
         <Navbar />
         <Hero />
         <div className='relative'>
-          <Analytics />
           <Navbar />
           <Works />
           <ContactSummary />
